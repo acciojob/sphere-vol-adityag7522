@@ -4,8 +4,8 @@ function volume_sphere(e) {
 	const r = parseInt(radi.value);
 	console.log(r);
 
-	const volume = 4 * 3.14 * Math.pow(r,3) / 3;
-	document.getElementById('volume').value = volume;
+	const volume = 4 * 3.14159 * Math.pow(r,3) / 3;
+	document.getElementById('volume').value = volume.toFixed(4);
   
 } 
 
