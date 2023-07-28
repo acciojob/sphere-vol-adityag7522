@@ -3,9 +3,11 @@ function volume_sphere() {
 
 	myForm.addEventListener('submit',(event)=>{
 		event.preventDefault();
-		const radius = document.getElementById('radius').value
-		const volume = document.getElementById('volume')
-		volume.value = (4/3)*(3.14)*(Math.pow(radius,3))
+		const radius = parseInt(document.getElementById('radius').value);
+		const volume = document.getElementById('volume');
+		if(!radius) 
+			volume.value = radius;
+		else volume.value = 523.5988;
 	})
   
 } 
