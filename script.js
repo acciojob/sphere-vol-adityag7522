@@ -1,5 +1,7 @@
 function volume_sphere() {
-    //Write your code here
+    const radi = document.getElementById('radius');
+	const r = parseInt(radi.value);
+	console.log(r);
   
 } 
 
