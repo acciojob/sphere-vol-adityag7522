@@ -1,11 +1,11 @@
-function volume_sphere(e) {
-	e.preventDefault();
-    const radi = document.getElementById('radius');
-	const r = parseInt(radi.value);
-	console.log(r);
+function volume_sphere() {
+	const myForm = document.getElementById('MyForm')
 
-	const volume = 4 * 3.14159 * Math.pow(r,3) / 3;
-	document.getElementById('volume').value = volume.toFixed(4);
+	myForm.addEventListener('submit',(event)=>{
+		const radius = document.getElementById('radius').value
+		const volume = document.getElementById('volume')
+		volume.value = (4/3)*(3.14)*(Math.pow(radius,3))
+	})
   
 } 
 
